@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./lib/components/Button";
+import Badge from "./lib/components/Badge";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "start",
+        justifyContent: "center",
+        gap: "1.5rem",
+        padding: "5rem",
+      }}
+    >
+      <p>Bootstrap Components.</p>
+      <h5>Sample Badge Design Component:</h5>
+      <Badge value={3} />
+      <br />
+      <h5>Sample Button Design Component:</h5>
+      <Button label="Enter" kind="primary" />
     </div>
   );
 }
