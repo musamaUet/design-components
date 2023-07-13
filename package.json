@@ -1,7 +1,6 @@
 {
   "name": "design-components",
   "version": "0.1.2",
-  "private": false,
   "main": "dist/index.js",
   "files": [ "dist", "README.md" ],
   "author": "M Usama Rabani <usamaitians.gcuf@gmail.com>",
